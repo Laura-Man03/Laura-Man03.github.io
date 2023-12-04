@@ -1,0 +1,165 @@
+/* TAGS */
+/* Page links */
+a{
+    color: #ffaf66;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffcb66;
+}
+
+/* Design */
+body{
+    background-color:#fbefd8;
+    /* i would like the type to be lato */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #252525;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1{
+    color:#ffaf66;
+    font-weight: .2em;
+    font-size: 1.75em;
+}
+
+/* Footer */
+footer{
+    text-align: right;
+    background-color: #252525;
+    color:#ffaf66;
+    font-size: .9em;
+    margin-top: 4em;
+    padding: 1.11em 0;
+}
+
+
+/* CLASSES */
+/* Search */
+.search{
+    background-color: #ffaf66;
+    color: #252525;
+    border-radius: .25em;
+    padding: .5em .75em;
+}
+
+.search:hover{
+    background-color: #ffcb66;
+    color: #393939;
+}
+
+/* Sign in */
+.sign-in{
+    background-color: #ffaf66;
+    color: #252525;
+    border-radius: .25em;
+    padding: .5em .75em;
+}
+
+.sign-in:hover{
+    background-color: #ffcb66;
+    color: #393939;
+}
+
+/* Navbar Class*/
+.navbar-brand{
+    background-color: #ffaf66;
+    color: #252525;
+    padding: .5em .75em;
+    border-radius: .25em;
+}
+.navbar-brand:hover{
+    background-color: #ffcb66;
+    color: #393939;
+}
+
+.navbar{
+    background-color: #252525;
+    border-bottom: 1px solid #252525;
+    padding: .5em;
+}
+
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-nav li{
+    padding: .5em;
+    margin: 0 .5em;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Blog Class*/
+.blog-post header{
+    text-align: center;
+    margin-top: 4em;
+}
+
+.blog-post header h5{
+    text-transform: uppercase;
+}
+
+.blog-post header h1{
+    text-transform: capitalize;
+}
+
+.blog-post .image{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Button Class */
+.button{
+    margin-top: .5em;
+    background-color: #ffb066;
+    color: #252525;
+    border: none;
+    border-radius: .25em;
+    padding: .5em .75em; 
+}
+
+.button:hover{
+    background-color: #ffcb66;
+    color: #616060;
+}
+
+/* Text Classes */
+.subtitle{
+    margin-top: 2em;
+}
+
+.summary{
+    padding-left: 40px;
+}
+
+.summary li{
+    margin-top: 1em;
+}
+
+/* Image Classes */
+.rounded-image img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.img-banner{
+    display: block;
+    width: 100%;
+    margin-top: .5em;
+    padding-left: .2em;
+}
+
