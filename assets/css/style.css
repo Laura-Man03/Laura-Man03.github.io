@@ -1,5 +1,9 @@
 /* TAGS */
 /* Page links */
+:root {
+    --thumbnail-size: 5rem;
+}
+
 a{
     color: #ffaf66;
     text-decoration: none;
@@ -21,12 +25,25 @@ body{
 h1, h2, h3, h4, h5, h6{
     margin-top: 1em;
     margin-bottom: 1em;
+    color: #ffcb66;
 }
 
-h1{
+header{
+    text-align: center;
+    margin-top: 1em;
     color:#ffaf66;
-    font-weight: .2em;
+    font-weight: 5em;
     font-size: 1.75em;
+    margin-bottom: 1em;
+}
+
+ul{
+    list-style: none;
+    align-items: center;
+}
+
+a img{
+    height: 5rem;
 }
 
 /* Footer */
@@ -73,6 +90,7 @@ footer{
     color: #252525;
     padding: .5em .75em;
     border-radius: .25em;
+    font-weight: bold;
 }
 .navbar-brand:hover{
     background-color: #ffcb66;
@@ -103,10 +121,6 @@ footer{
 }
 
 /* Blog Class*/
-.blog-post header{
-    text-align: center;
-    margin-top: 4em;
-}
 
 .blog-post header h5{
     text-transform: uppercase;
@@ -156,10 +170,95 @@ footer{
     border-radius: 8px;
 }
 
+a .img-banner{
+    display: block;
+    width: 100%;
+    height: 35%;
+    margin-top: .5em;
+    padding-left: .2em;
+}
+
 .img-banner{
     display: block;
     width: 100%;
     margin-top: .5em;
     padding-left: .2em;
+}
+
+.icon-img{
+    display: block;
+    width: 50%;
+    margin-top: .5em;
+}
+
+/* Gallery */
+.gallery-nav{
+    display: flex;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.gallery-nav .nav-item{
+    margin: 0 .5rem;
+}
+
+.gallery-nav .nav-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: var(--thumbnail-size);
+    width: var(--thumbnail-size);
+}
+
+.gallery-overlay{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transition: opacity .2s ease;
+    width: 100%;
+}
+
+.gallery-close{
+    align-items: center;
+    background-color: #000;
+    border: 1px solid #555;
+    border-radius: 100%;
+    color: #fff;
+    display: flex;
+    font-weight: bold;
+    height: 2rem;
+    justify-content: center;
+    position: absolute;
+    right: -1rem;
+    top:-1rem;
+    width: 2rem;
+}
+
+.gallery-item{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-image{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.gallery-overlay:target{
+    opacity: 1;
+    pointer-events: all;
 }
 
