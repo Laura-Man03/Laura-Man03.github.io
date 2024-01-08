@@ -1,7 +1,7 @@
 /* TAGS */
 /* Page links */
 :root {
-    --thumbnail-size: 5rem;
+    --thumbnail-size: 8rem;
 }
 
 a{
@@ -32,8 +32,8 @@ header{
     text-align: center;
     margin-top: 1em;
     color:#ffaf66;
-    font-weight: 5em;
-    font-size: 1.75em;
+    font-weight: bolder;
+    font-size: 50px;
     margin-bottom: 1em;
 }
 
@@ -42,9 +42,7 @@ ul{
     align-items: center;
 }
 
-a img{
-    height: 5rem;
-}
+
 
 /* Footer */
 footer{
@@ -58,18 +56,6 @@ footer{
 
 
 /* CLASSES */
-/* Search */
-.search{
-    background-color: #ffaf66;
-    color: #252525;
-    border-radius: .25em;
-    padding: .5em .75em;
-}
-
-.search:hover{
-    background-color: #ffcb66;
-    color: #393939;
-}
 
 /* Sign in */
 .sign-in{
@@ -120,21 +106,6 @@ footer{
     justify-content: space-between;
 }
 
-/* Blog Class*/
-
-.blog-post header h5{
-    text-transform: uppercase;
-}
-
-.blog-post header h1{
-    text-transform: capitalize;
-}
-
-.blog-post .image{
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
 /* Button Class */
 .button{
     margin-top: .5em;
@@ -150,23 +121,12 @@ footer{
     color: #616060;
 }
 
-/* Text Classes */
-.subtitle{
-    margin-top: 2em;
-}
-
-.summary{
-    padding-left: 40px;
-}
-
-.summary li{
-    margin-top: 1em;
-}
-
 /* Image Classes */
-.rounded-image img{
+.rounded-image{
     display: block;
+    align-items: center;
     width: 100%;
+    height: auto;   
     border-radius: 8px;
 }
 
@@ -187,11 +147,17 @@ a .img-banner{
 
 .icon-img{
     display: block;
-    width: 50%;
+    width: auto;
     margin-top: .5em;
+    height: 5rem;
+    border-radius: 15px;
 }
 
 /* Gallery */
+.caption {
+    color: #ffcb66; 
+}
+
 .gallery-nav{
     display: flex;
     list-style: none;
@@ -244,16 +210,18 @@ a .img-banner{
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 50%;
     justify-content: center;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
 }
 
 .gallery-image{
     display: block;
-    max-width: 100%;
+    width: 60%;
     max-height: 100%;
 }
 
@@ -262,3 +230,35 @@ a .img-banner{
     pointer-events: all;
 }
 
+/* Chat Styling */
+
+
+.chat-body{
+    padding: 1em 2em;
+    border-radius: 15px;
+    background: #00000024;
+}
+
+.chat-body .row {
+    background: azure;
+    border-radius: 15px;
+}
+
+.message-content{
+    margin: auto;
+}
+
+.user-info{
+    padding: 1em;
+    text-align: center;
+    margin: auto;
+}
+
+.user-info img{
+    border-radius: 20px;
+    height: 50px;
+}
+
+.message{
+    margin: 0em 0em 1em !important;
+}
